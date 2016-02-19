@@ -1,16 +1,15 @@
 Telescope.config.addCustomPrefix("scr_");
 
-// Telescope.modules.add("primaryNav", {
-//   template: "tagline",
-//   order: 2
-// });
+Telescope.modules.add("primaryNav", {
+   template: "tagline",
+   order: 2
+ });
 
 Telescope.modules.remove("primaryNav", "pages_menu");
 Telescope.modules.remove("primaryNav", "search");
 Telescope.modules.remove("primaryNav", "views_menu");
 Telescope.modules.remove("primaryNav", "categories_menu");
-
-
+Telescope.modules.remove("secondaryNav", "defaultMenuLabel");
 Telescope.modules.remove("footer", "footer_social");
 
 Telescope.modules.add("footer", {
@@ -25,30 +24,28 @@ Telescope.modules.add("footer", {
 // });
 
 Telescope.modules.add("sidebar", [
-  // {
-  //   template: "intro",
-  //   order: 0
-  // },
-  {
-    template: "search",
-    order: 1 
-  },
-  {
-    template: "views_menu",
-    order: 2
-  },
+ 
+
   {
     template: "categories_menu",
-    order: 3
+    order: 0
   },
-  {
-    template: "footer_social",
-    order: 4
+//    {
+//    template: "views_menu",
+//    order: 1
+//  },
+    {
+     template: "intro",
+     order: 2
+   },
+     {
+    template: "search",
+    order: 3 
   },
-  {
-    template: "placeholder",
-    order: 5
-  }
+       {
+    template: "footer-social",
+    order: 4 
+  },
 ]);
 
 Telescope.colorElements.add(".sidebar .menu-item .menu-item-label-wrapper", "accentColor", "border-color");
@@ -65,4 +62,4 @@ Telescope.colorElements.add(".footer-social .social-link:hover", "accentContrast
 Telescope.colorElements.add(".footer-social .social-link:hover", "accentColor", "border-color");
 
 
-
+Telescope.utils.icons.comment = "pencil-square-o";

@@ -238,7 +238,7 @@ $bolder: 800;
   }
 
   .footer-social{
-    order: 10;
+    order: 4;
   }
 
   .placeholder{
@@ -337,7 +337,7 @@ $bolder: 800;
 // }
 
 .header{
-  background: white !important;
+  background: black !important;
 }
 .view-menu{
   // .top a{
@@ -442,11 +442,11 @@ $bolder: 800;
 .posts {
   .post-content{
     .post-info{
-      background-color: rgba(0, 183, 198, 0.7);
+      background-color: rgba(157, 240, 0, 0.7);
     }
     &:hover{
       .post-info{
-        background-color: rgba(0, 146, 159, 0.85);
+        background-color: rgba(140, 214, 0, 0.85);
       }
     }
   }
@@ -480,3 +480,40 @@ $bolder: 800;
     padding: 0 60px;
   }
 }
+
+.posts .post {
+    width: calc((100% - 20px)/2);
+}
+
+
+
+.post-page-share {
+  display: none;
+}
+
+.post-vote {
+  display: none;
+}
+
+
+.single-post-item .post-vote {
+  display: none;
+}
+
+ .hero {
+   display: none;
+ }
+
+.comment-new-heading {
+  visibility: hidden;
+  position: relative;
+}
+
+.comment-new-heading:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Make Proposal";
+}
+

@@ -42,6 +42,5 @@ telescope:update-prompt
 
 ############ Your Custom Packages ############
 
-utilities:compile-svg
 telescope:zeiss
 screenings
